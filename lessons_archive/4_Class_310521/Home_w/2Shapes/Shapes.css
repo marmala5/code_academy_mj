@@ -1,0 +1,38 @@
+/*<!--    Colors: #ECF5E4, #95CD8B, #D0E6BB-->*/
+/*font: 40px/100px */
+
+
+
+.round_shape{
+    height: 100px;
+    width: 100px;
+    background-color: #ECF5E4;
+    border: solid 25px #95CD8B;
+    border-right: 25px solid #D0E6BB;
+    border-radius: 50%;
+    /*"font: 40px/100px"- I believe this Kiril's note refers to
+    font-size and line height(see two following lines)*/
+    font-size: 40px;
+    line-height: 100px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
+
+
+.square_shape{
+    height: 100px;
+    width: 100px;
+    background-color: #ECF5E4;
+    border: solid 25px #95CD8B;
+    border-right: 25px solid #D0E6BB;
+    font-size: 40px;
+    line-height: 100px;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+

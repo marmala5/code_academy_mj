@@ -1,0 +1,21 @@
+th{
+    background-color: #9a2522; color: white;
+    /*color picker used https://imagecolorpicker.com/en*/
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    border-bottom: 1px solid black;padding-right: 40px;
+}
+
+tr:nth-child(even){
+    background-color: #fff0b1;
+    /*color picker used https://imagecolorpicker.com/en*/
+}
+tr:nth-child(odd){
+    background-color: #fff1d4;
+    /*color picker used https://imagecolorpicker.com/en*/
+}

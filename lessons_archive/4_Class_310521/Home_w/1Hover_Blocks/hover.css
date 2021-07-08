@@ -1,0 +1,17 @@
+
+.rectangle {
+    height: 50px;
+    width: 50px;
+    background-color: #009abf;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+ul{padding: 0px
+}
+
+.rectangle:nth-child(even) {background: black
+}
+
+.rectangle:hover{background-color: #ff9f19
+}
