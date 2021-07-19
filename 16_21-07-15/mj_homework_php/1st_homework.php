@@ -77,4 +77,6 @@ function F_to_C($f){
 }
 var_dump(F_to_C(34));
 
+//Kodel ant terminalo neveikia komanda 'subl'?
+
 
