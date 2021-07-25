@@ -12,7 +12,8 @@ $book = [
 'genre' => 'drama'
 ];
 
-// var_dump($book);
+var_dump($book);
+
 
 
 //     Sukurti masyvą, kurio elementai būtų masyvai aprašantys knygas
