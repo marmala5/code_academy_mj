@@ -14,7 +14,7 @@ while ($rollRes < 5) {
 
 //??????????????????????Nesugebejau pritaikyti While ciklo - reikia 
 
-while($resultReceived = false){
+
 	$rollRes1 = rand(1, 6);	
 	$rollRes2 = rand(1, 6);
 	$totalRes = $rollRes1 + $rollRes2;
@@ -43,13 +43,12 @@ while($resultReceived = false){
 		
 		// 	Kitais atvejais – kauliukas metamas dar kartą.
 	else {
-		return $resultReceived = false;
+	
 		var_dump('Rezultatas '.$rollRes1 .'+' .$rollRes2 .'='.$totalRes .' kauliukas metamas dar kartą.');
 		
 		
 	}
 
-}
 	
 // Žaidimas turi vykti iki kol žaidėjas laimės / pralaimės(while)
 	
