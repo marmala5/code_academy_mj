@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+	<div class="container">
+		<form class="row g-3" method="POST" action="cel2fah.php">
+			<div class="col-auto">
+				<input type="text" class="form-control" id="inputnumber" placeholder="Enter value" name="entry_value" value="<?php echo $entry; ?>">
+				<!-- Ar gerai, kad cia padariau  value="<?php echo $entry; ?> ar turejo buti kitoks sprendimas, kad sugrazintu ivesta verte, o ne perkrautu kiekviena karta-->
+			</div>
+
+
+			<div class="form-check">
+				<input class="form-check-input" type="radio" id="flexRadioDefault1" name="selection" value="celcius" checked>
+				<!-- Jeigu nuimu "checked", tada meta klaida nepadarius pasirinkimo. Neradau kaip sia problema isspresti. Taip pat nezinau, kaip cia padaryti, kad perkrovus grazintu pasirinkta verte, o ne perkrautu per nauja???????????-->
+
+				<label class="form-check-label" for="flexRadioDefault1">
+					From Celsius to Fahrenheit 
+				</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" id="flexRadioDefault2" name="selection" value = 'fahrenheit'>
+				<label class="form-check-label" for="flexRadioDefault2">
+					From Fahrenheit to Celsius 
+				</label>
+			</div>
+
+			<div class="col">
+				<!-- neradau kaip input field padaryti didesni, kai reikia daugiau vietos tekstui. Fit to size ????????? -->
+				<input class="form-control" type="text" aria-label="" readonly name="output_value" value = "<?php echo $output; ?>">
+			</div>
+			<div class="col-max-width">
+				<button type="submit" class="btn btn-primary mb-3">Get result</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
+

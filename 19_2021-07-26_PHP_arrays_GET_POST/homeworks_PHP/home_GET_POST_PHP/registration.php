@@ -1,5 +1,6 @@
-<?php
+<!-- <?php
 $data = $_POST;
+
 
 if (empty($data['username']) ||
     empty($data['password']) ||
@@ -12,3 +13,5 @@ if (empty($data['username']) ||
 if ($data['password'] !== $data['password_confirm']) {
    exit('Password and Confirm password should match!');   
 } exit('Registration complete');
+
+

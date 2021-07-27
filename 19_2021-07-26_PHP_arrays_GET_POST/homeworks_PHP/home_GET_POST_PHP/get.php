@@ -20,7 +20,7 @@ if (isset($_GET['num1']) && isset($_GET['num2'])) {
  
     echo 'Result: '.$num1 * $num2;
 }
- 
+
 ?>
 </body>
 </html>
