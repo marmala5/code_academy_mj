@@ -9,9 +9,12 @@
 	
 // Atnaujinus(refreshin‘us) naršyklės langą, atsakymai išlieka.
 
+session_save_path(); //ar sitas yra butinas?
+
 session_start();
 //nesugebejau pajungti sesiju - nespejau issiaiskinti.
 //Validacijos taip pat nera geros, bet ja suprantu kaip daryti  - tiesiog labai daug laiko skyriau sesijoms ir cookies. Reiketu daugiau pavyzdziu.
+
 
 
 $input1 = $_POST['input_1'];
