@@ -41,4 +41,4 @@ if (isset($entry, $make_selection))
 }
 
 
-require_once ('cel2fah.html');
+require_once ('cel2fah.phtml');
