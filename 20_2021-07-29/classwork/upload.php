@@ -2,11 +2,12 @@
 
 //Klausimai:
 //Kas yra ["mime"]?
-//
+//Klaisimas 23 eiluteje.
+//Klausimas 72 eiluteje.
+
 
 require_once('file_upload.html');
 
-session_start();
 
 //https://www.w3schools.com/php/php_file_upload.asp
 // PHP script explained:
@@ -17,17 +18,23 @@ session_start();
 // Next, check if the image file is an actual image or a fake image
 
 
-if (isset($_FILES['fileUpload'])){
+// if (isset($_FILES['fileUpload']))
+//Jei as sita bandau patikrinti kartu su "submit" 34 eiluteje, man meta klaida. Kaip ir kurioje vietoje teisingai atlikti patikrinima.
+
+
+
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 //Kuo siuo atveju skiriasi nuo $_FILES["fileToUpload"]["name"]?
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 // Check if image file is a actual image or fake image
+
+
 if(isset($_POST["submit"])) {
 	$check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
 	if($check !== false) {
-		echo "File is an image - " . $check["mime"] . ".";
+		echo "File is an image - " . $check["mime"] . "<br>";
 		$uploadOk = 1;
 	} else {
 		echo "File is not an image.";
@@ -61,12 +68,11 @@ if ($uploadOk == 0) {
 // if everything is ok, try to upload file
 } else {
 	if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-		echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
+		echo "file successfully uploaded"."<br>";
+		echo $target_file;
 
 	} else {
 		echo "Sorry, there was an error uploading your file.";
 
 	}
 }
-} else echo "Nepasirinkote jokio failo! Spauskite Choose file ir pasirinkite faila ikelimui.";
-//Kaip padaryti, kad sis rezultatas pasirodytu tik paspaudus "Upload File" mygtuka?
