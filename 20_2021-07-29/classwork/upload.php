@@ -6,7 +6,7 @@
 //Klausimas 72 eiluteje.
 
 
-require_once('file_upload.html');
+
 
 
 //https://www.w3schools.com/php/php_file_upload.asp
@@ -25,6 +25,7 @@ require_once('file_upload.html');
 
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+require_once('file_upload.html');
 //Kuo siuo atveju skiriasi nuo $_FILES["fileToUpload"]["name"]?
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
